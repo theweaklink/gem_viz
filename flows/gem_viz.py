@@ -20,9 +20,10 @@ def run():
             "GRABEN",
         ]
     )
-    r_h = onecode.slider("Resolution (XY)", 50, min=20, max=200, step=1)
+    r_hx = onecode.slider("Resolution (X)", 50, min=20, max=200, step=1)
+    r_hy = onecode.slider("Resolution (Y)", 50, min=20, max=200, step=1)
     r_v = onecode.slider("Resolution (Z)", 5, min=5, max=200, step=1)
-    resolution = [r_h, r_h, r_v]
+    resolution = [r_hx, r_hy, r_v]
 
     onecode.Logger.info(f"Getting Model {model} at resolution {resolution}")
     geo_model = generate_example_model(
