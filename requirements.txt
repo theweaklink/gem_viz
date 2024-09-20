@@ -1,2 +1,4 @@
 gempy[opt]
 onecode>=1,<2
+-i https://gitlab.kitware.com/api/v4/projects/13/packages/pypi/simple
+vtk_osmesa<=9.2.1000
